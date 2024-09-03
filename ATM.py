@@ -48,7 +48,7 @@ class Atm:
       print('Pin changed successfully')
 
     else:
-      print('Enter correct old pin')
+      print('Wrong pin')
     self.menu()
 
   def check_balance(self):
@@ -56,7 +56,7 @@ class Atm:
     if user_pin == self.pin:
       print('Your balance is ',self.balance)
     else:
-      print('Enter correct pin')
+      print('Wrong pin')
     self.menu()
 
   def withdraw(self):
@@ -70,6 +70,6 @@ class Atm:
       else:
         print('Low balance.Your balance is',self.balance)
     else:
-      print('Enter correct pin')
+      print('Wrong pin')
     self.menu()
 obj=Atm()
